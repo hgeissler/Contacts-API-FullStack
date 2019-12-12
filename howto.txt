@@ -15,3 +15,9 @@ crm>src>main>java>com>crm>crm>model> new File ContactRepository.java
 
 crm>src>main>java>com>crm>crm>model> new File DemoLoader.java
 // test model connected to database with this demo
+
+crm>src>main>java>com>crm>crm>model> new File ReactAndSpringDataRestApplication.java
+// Finalize API Endpoints for Frontend and Backend
+
+crm>src>main>resources edit File: application.properties
+// set URL for the API
