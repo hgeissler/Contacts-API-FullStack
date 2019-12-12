@@ -1,3 +1,6 @@
+Required: VS Code, JDK 1.8, Spring Boot, Spring initializr
+// correct "java.home" in vscode settings.json ! 
+
 SETUP
   https://spring.io > projects > spring boot > quick start > spring initializr
   Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
@@ -21,3 +24,17 @@ crm>src>main>java>com>crm>crm>model> new File ReactAndSpringDataRestApplication.
 
 crm>src>main>resources edit File: application.properties
 // set URL for the API
+
+// now run/debug to start server (chose ReactAndSpringDataRestApplication), then:
+// postman GET http://localhost:8080/api
+// res.body:
+{
+  "_links": {
+    "contacts": {
+      "href": "http://localhost:8080/api/contacts"
+    },
+    "profile": {
+      "href": "http://localhost:8080/api/profile"
+    }
+  }
+}

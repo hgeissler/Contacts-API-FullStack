@@ -9,12 +9,18 @@ import lombok.Data;
 @Entity
 
 public class Contact {
-  private @Id @GeneratedValue Long Id;
-  private String firstName;
-  private String lastName;
-  private String email;
-
-  private Contact() {}
+  // changed private to public for testing
+  // because postman get-request on /api/contacts did not show contact created in DemoLoader
+  public @Id @GeneratedValue Long Id;
+  // changed private to public for testing
+  public String firstName; 
+  // changed private to public for testing
+  public String lastName;
+  // changed private to public for testing
+  public String email;
+  
+  // changed private to public for testing
+  public Contact() {}
 
   public Contact(String firstName, String lastName, String email) {
     this.firstName = firstName;
