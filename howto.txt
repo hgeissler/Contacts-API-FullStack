@@ -1,0 +1,6 @@
+https://spring.io > projects > spring boot > quick start > spring initializr
+Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
+> Dependencies: rest repositories, jpa, h2, lombok
+> Generate Project
+
+> npx create-react-app client
