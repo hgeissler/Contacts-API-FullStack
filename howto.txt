@@ -1,6 +1,17 @@
-https://spring.io > projects > spring boot > quick start > spring initializr
-Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
-> Dependencies: rest repositories, jpa, h2, lombok
-> Generate Project
+SETUP
+  https://spring.io > projects > spring boot > quick start > spring initializr
+  Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
+  > Dependencies: rest repositories, jpa, h2, lombok
+  > Generate Project
 
-> npx create-react-app client
+  > npx create-react-app client
+
+
+crm>src>main>java>com>crm>crm> new Folder: model > new File: Contact.java
+// Define first model class
+
+crm>src>main>java>com>crm>crm>model> new File ContactRepository.java
+//JPA repository (database sql)
+
+crm>src>main>java>com>crm>crm>model> new File DemoLoader.java
+// test model connected to database with this demo
