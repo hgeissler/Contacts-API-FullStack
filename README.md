@@ -37,10 +37,6 @@ Fullstack API built with Java Spring Boot, React.js and Materializecss
 
 ### START SERVER
   - now run/debug to start server (chose ReactAndSpringDataRestApplication), then:
-  - postman GET http://localhost:8080/api
-
-  - postman POST:
-    - >> Gets safed on the server !
 
 ### START CLIENT
   - open terminal in client folder and > npm start
