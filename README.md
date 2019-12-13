@@ -1,66 +1,54 @@
 # Contacts-API-FullStack
 Fullstack API built with Java Spring Boot, React.js and Materializecss
 
-GIT CLONE:
-  git clone --recursive https://github.com/hgeissler/Contacts-API-FullStack.git
-  // --recursive needed, because client is a submodule 
+# GIT CLONE:
+  - git clone --recursive https://github.com/hgeissler/Contacts-API-FullStack.git
+  - // --recursive needed, because client is a submodule 
   
-  
-Required: VS Code, JDK 1.8, Spring Boot, Spring initializr
-// correct "java.home" in vscode settings.json ! 
-
-SETUP
-  https://spring.io > projects > spring boot > quick start > spring initializr
-  Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
-  > Dependencies: rest repositories, jpa, h2, lombok
-  > Generate Project
-
-  > npx create-react-app client
 
 
-crm>src>main>java>com>crm>crm> new Folder: model > new File: Contact.java
-// Define first model class
+# Development Process:
+### Required: VS Code, JDK 1.8, Spring Boot, Spring initializr
+- // correct "java.home" in vscode settings.json ! 
 
-crm>src>main>java>com>crm>crm>model> new File ContactRepository.java
-//JPA repository (database sql)
+### SETUP
+  - https://spring.io > projects > spring boot > quick start > spring initializr
+  - Select: > Maven Project > Java > 2.2.2 > Group: com.crm > Artifact: crm
+  - Dependencies: rest repositories, jpa, h2, lombok
+  - Generate Project
 
-crm>src>main>java>com>crm>crm>model> new File DemoLoader.java
-// test model connected to database with this demo
+  - npx create-react-app client
 
-crm>src>main>java>com>crm>crm>model> new File ReactAndSpringDataRestApplication.java
-// Finalize API Endpoints for Frontend and Backend
 
-crm>src>main>resources edit File: application.properties
-// set URL for the API
+- crm>src>main>java>com>crm>crm> new Folder: model > new File: Contact.java
+- // Define first model class
 
-START SERVER
-  now run/debug to start server (chose ReactAndSpringDataRestApplication), then:
-  postman GET http://localhost:8080/api
-  // res.body:
-  {
-    "_links": {
-      "contacts": {
-        "href": "http://localhost:8080/api/contacts"
-      },
-      "profile": {
-        "href": "http://localhost:8080/api/profile"
-      }
-    }
-  }
+- crm>src>main>java>com>crm>crm>model> new File ContactRepository.java
+- //JPA repository (database sql)
 
-  postman POST:
-    // Headers: Content-Type: application/json
-    // Body: raw:
-    { firstName: "Jane", "lastName": "Doe", "email": "jdoe@mail.com"}
-    >> Gets safed on the server !
+- crm>src>main>java>com>crm>crm>model> new File DemoLoader.java
+- // test model connected to database with this demo
 
-START CLIENT
-  open terminal in client folder and > npm start
+- crm>src>main>java>com>crm>crm>model> new File ReactAndSpringDataRestApplication.java
+- // Finalize API Endpoints for Frontend and Backend
 
-Materializecss
-  // A modern responsive front-end framework based on Material Design
-  go to http://materializecss.com > Get started > Copy CDN > Paste into public/index.html
+- crm>src>main>resources edit File: application.properties
+- // set URL for the API
 
-After Frontend is finished:
-  Add RepositoryRestResource to ContactRepository and create ContactsController
-  // for CORS !
+### START SERVER
+  - now run/debug to start server (chose ReactAndSpringDataRestApplication), then:
+  - postman GET http://localhost:8080/api
+
+  - postman POST:
+    - >> Gets safed on the server !
+
+### START CLIENT
+  - open terminal in client folder and > npm start
+
+### Materializecss
+  - // A modern responsive front-end framework based on Material Design
+  - go to http://materializecss.com > Get started > Copy CDN > Paste into public/index.html
+
+### After Frontend is finished:
+  - Add RepositoryRestResource to ContactRepository and create ContactsController
+  - // for CORS !
