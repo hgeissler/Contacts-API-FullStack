@@ -56,3 +56,7 @@ Materializecss
 After Frontend is finished:
   Add RepositoryRestResource to ContactRepository and create ContactsController
   // for CORS !
+
+GIT CLONE:
+  git clone --recursive https://github.com/hgeissler/Contacts-API-FullStack.git
+  // --recursive needed, because client is a submodule 
